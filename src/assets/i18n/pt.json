@@ -35,5 +35,9 @@
         "newPassword": "Nova senha",
         "confirmPassword": "Confirmar senha",
         "resetButton": "Redefinir senha"
+    },
+   "copyRight": {
+        "craftedBy": "Feito com ❤️ por",
+        "author": "Lucas Heber"
     }
 }
