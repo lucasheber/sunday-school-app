@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar, IonButton, IonItem, IonIcon, IonInput, IonFooter } from '@ionic/angular/standalone';
+import { IonContent, IonToolbar, IonButton, IonItem, IonIcon, IonInput, IonFooter } from '@ionic/angular/standalone';
+import { TranslocoModule } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
   standalone: true,
-  imports: [IonContent,IonToolbar, CommonModule, FormsModule, ReactiveFormsModule, IonButton, IonItem, IonIcon, IonInput, IonFooter],
+  imports: [IonContent, IonToolbar, CommonModule, FormsModule, ReactiveFormsModule, IonButton, IonItem, IonIcon, IonInput, IonFooter, TranslocoModule],
 })
 export class LoginPage implements OnInit {
 
