@@ -1,0 +1,39 @@
+{
+    "login": {
+        "welcome": "Bem-vindo!",
+        "description": "Por favor, faça login para continuar.",
+        "title": "Entrar",
+        "email": "Email",
+        "password": "Senha",
+        "rememberMe": "Lembrar de mim",
+        "forgotPassword": "Esqueci minha senha",
+        "loginButton": "Entrar",
+        "register": "Registrar"
+    },
+    "register": {
+        "title": "Registrar",
+        "description": "Registre-se para criar uma nova conta.",
+        "fullName": "Nome completo",
+        "username": "Nome de usuário",
+        "email": "Email",
+        "password": "Senha",
+        "confirmPassword": "Confirmar senha",
+        "registerButton": "Registrar",
+        "signin-a": "Já tem uma conta?",
+        "signin-b": "Entrar"
+    },
+    "forgotPassword": {
+        "title": "Esqueci minha senha",
+        "description": "Digite seu email para redefinir a senha.",
+        "remember": "Lembrar senha?",
+        "signin": "Entrar",
+        "email": "Email",
+        "sendButton": "Redefinir senha"
+    },
+    "resetPassword": {
+        "title": "Redefinir senha",
+        "newPassword": "Nova senha",
+        "confirmPassword": "Confirmar senha",
+        "resetButton": "Redefinir senha"
+    }
+}

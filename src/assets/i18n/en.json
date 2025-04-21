@@ -1,0 +1,38 @@
+{
+    "login": {
+        "welcome": "Welcome!",
+        "description": "Please log in to continue.",
+        "title": "Login",
+        "email": "Email",
+        "password": "Password",
+        "loginButton": "Login",
+        "forgotPassword": "Forgot Password",
+        "register": "Register"
+    },
+    "register": {
+        "title": "Register",
+        "description": "Sign up to create a new account.",
+        "fullName": "Full Name",
+        "username": "Username",
+        "email": "Email",
+        "password": "Password",
+        "confirmPassword": "Confirm Password",
+        "registerButton": "Register",
+        "signin-a": "Already have an account?",
+        "signin-b": "Sign in"
+    },
+    "forgotPassword": {
+        "title": "Forgot Password",
+        "description": "Enter your email to reset password.",
+        "email": "Email",
+        "remember": "Remember password?",
+        "signin": "Sign in",
+        "sendButton": "Reset Password"
+    },
+    "resetPassword": {
+        "title": "Reset Password",
+        "newPassword": "New Password",
+        "confirmPassword": "Confirm Password",
+        "resetButton": "Reset Password"
+    }
+}
