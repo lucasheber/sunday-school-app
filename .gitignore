@@ -72,3 +72,4 @@ Thumbs.db
 android/
 ios/
 resources/android/**/*
+src/assets/icons
