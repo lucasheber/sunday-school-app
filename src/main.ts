@@ -13,15 +13,17 @@ bootstrapApplication(AppComponent, {
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     provideIonicAngular(),
-    provideRouter(routes, withPreloading(PreloadAllModules)), provideHttpClient(), provideTransloco({
-        config: { 
-          availableLangs: ['en', 'pt'],
-          defaultLang: 'pt',
-          // Remove this option if your application doesn't support changing language in runtime.
-          reRenderOnLangChange: true,
-          prodMode: !isDevMode(),
-        },
-        loader: TranslocoHttpLoader
-      }),
+    provideRouter(routes, withPreloading(PreloadAllModules)),
+    provideHttpClient(),
+    provideTransloco({
+      config: {
+        availableLangs: ['en', 'pt'],
+        defaultLang: 'pt',
+        // Remove this option if your application doesn't support changing language in runtime.
+        reRenderOnLangChange: true,
+        prodMode: !isDevMode(),
+      },
+      loader: TranslocoHttpLoader
+    }),
   ],
 });
