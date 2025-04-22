@@ -1,4 +1,20 @@
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-item class="language-item" lines="none">
+    <ion-select
+      interface="popover"
+      (ionChange)="changeLang($event.detail.value)"
+      [okText]="'SELECT.okText' | transloco"
+      [cancelText]="'SELECT.cancelText' | transloco"
+      [(ngModel)]="selectedLang"
+    >
+      <ion-select-option value="en">
+        &nbsp;{{ 'language.english' | transloco }}
+      </ion-select-option>
+      <ion-select-option value="pt">
+        &nbsp;{{ 'language.portuguese' | transloco }}
+      </ion-select-option>
+    </ion-select>
+  </ion-item>
   <!-- Login Page -->
   <div class="container" *ngIf="screen == 'signin'">
     <h1 class="heading">👋 {{ 'login.welcome' | transloco }}<br /><br /></h1>
@@ -80,7 +96,9 @@
         </fieldset>
       </ion-item>
       <p class="signup-text">
-        {{ 'register.signin-a' | transloco}}&nbsp;<a (click)="change('signin')">{{ 'register.signin-b' | transloco}}</a>
+        {{ 'register.signin-a' | transloco}}&nbsp;<a (click)="change('signin')"
+          >{{ 'register.signin-b' | transloco}}</a
+        >
       </p>
       <ion-button class="login-button" (click)="register()" expand="block"
         >{{ 'register.title' | transloco}}</ion-button
@@ -90,7 +108,9 @@
 
   <!-- Forget password page -->
   <div class="container" *ngIf="screen == 'forget'">
-    <h1 class="heading">{{ 'forgotPassword.title' | transloco}}?<br /><br /></h1>
+    <h1 class="heading">
+      {{ 'forgotPassword.title' | transloco}}?<br /><br />
+    </h1>
     <p class="para">{{ 'forgotPassword.description' | transloco}}</p>
     <ion-item lines="none" class="ion-item">
       <fieldset class="input-item">
@@ -99,13 +119,23 @@
       </fieldset>
     </ion-item>
     <p class="signup-text">
-      {{ 'forgotPassword.remember' | transloco}}&nbsp;<a (click)="change('signin')"> {{ 'forgotPassword.signin' | transloco}}</a>
+      {{ 'forgotPassword.remember' | transloco}}&nbsp;<a
+        (click)="change('signin')"
+      >
+        {{ 'forgotPassword.signin' | transloco}}</a
+      >
     </p>
-    <ion-button class="login-button" expand="block">{{ 'forgotPassword.sendButton' | transloco}}</ion-button>
+    <ion-button class="login-button" expand="block"
+      >{{ 'forgotPassword.sendButton' | transloco}}</ion-button
+    >
   </div>
 </ion-content>
 <ion-footer color="white">
   <ion-toolbar>
-    <p class="copyright">{{ 'copyright.craftedBy' | transloco}}&nbsp;<a>{{ 'copyright.author' | transloco}}</a></p>
+    <p class="copyright">
+      {{ 'copyRight.craftedBy' | transloco}}&nbsp;<a
+        >{{ 'copyRight.author' | transloco}}</a
+      >
+    </p>
   </ion-toolbar>
 </ion-footer>

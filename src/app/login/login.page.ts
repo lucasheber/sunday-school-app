@@ -1,23 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { IonContent, IonToolbar, IonButton, IonItem, IonIcon, IonInput, IonFooter } from '@ionic/angular/standalone';
-import { TranslocoModule } from '@jsverse/transloco';
+import { IonContent, IonToolbar, IonButton, IonItem, IonIcon, IonInput, IonFooter, IonSelect, IonSelectOption } from '@ionic/angular/standalone';
+import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
   standalone: true,
-  imports: [IonContent, IonToolbar, CommonModule, FormsModule, ReactiveFormsModule, IonButton, IonItem, IonIcon, IonInput, IonFooter, TranslocoModule],
+  imports: [IonSelect, IonSelectOption, IonContent, IonToolbar, CommonModule, FormsModule, ReactiveFormsModule, IonButton, IonItem, IonIcon, IonInput, IonFooter, TranslocoModule],
 })
 export class LoginPage implements OnInit {
-
+  selectedLang: string = this.translocoService.getActiveLang();
   screen: any = 'signin';
   formData: FormGroup;
   isLoading: boolean = false;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private translocoService: TranslocoService) {
     this.formData = this.fb.group({
       name: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
@@ -58,4 +58,7 @@ export class LoginPage implements OnInit {
     }
   }
 
+  changeLang(lang: string) {
+    this.translocoService.setActiveLang(lang);
+  }
 }

@@ -38,5 +38,15 @@
     "copyRight": {
         "craftedBy": "Crafted in ❤️ by",
         "author": "Lucas Heber"
+    },
+    "language": {
+        "title": "Language",
+        "english": "🇺🇸 English",
+        "portuguese": "🇧🇷 Portuguese"
+    },
+    "SELECT": {
+        "okText": "OK",
+        "cancelText": "Cancel"
     }
+
 }

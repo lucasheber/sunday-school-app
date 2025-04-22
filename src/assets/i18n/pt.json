@@ -39,5 +39,14 @@
    "copyRight": {
         "craftedBy": "Feito com ❤️ por",
         "author": "Lucas Heber"
+    },
+    "language": {
+        "title": "Idioma",
+        "english": "🇺🇸 Inglês",
+        "portuguese": "🇧🇷 Português"
+    },
+    "SELECT": {
+        "okText": "Confirmar",
+        "cancelText": "Cancelar"
     }
 }
