@@ -7,7 +7,10 @@
         "password": "Password",
         "loginButton": "Login",
         "forgotPassword": "Forgot Password",
-        "register": "Register"
+        "register": "Register",
+        "emailError": "Please enter a valid email address.",
+        "passwordError": "Password must be at least 6 characters long.",
+        "loginError": "Invalid email or password."
     },
     "register": {
         "title": "Register",

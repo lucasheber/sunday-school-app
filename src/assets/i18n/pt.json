@@ -8,7 +8,10 @@
         "rememberMe": "Lembrar de mim",
         "forgotPassword": "Esqueci minha senha",
         "loginButton": "Entrar",
-        "register": "Registrar"
+        "register": "Registrar",
+        "emailError": "Por favor, insira um endereço de email válido.",
+        "passwordError": "A senha deve ter pelo menos 6 caracteres.",
+        "loginError": "Email ou senha inválidos."
     },
     "register": {
         "title": "Registrar",
