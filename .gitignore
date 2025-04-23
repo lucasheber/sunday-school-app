@@ -75,3 +75,4 @@ resources/android/**/*
 src/assets/icons
 
 .env
+credentials.*
