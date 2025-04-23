@@ -1,9 +1,12 @@
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
-// The list of file replacements can be found in `angular.json`.
+// The list of file replacements can be found in `angular.json`.;
+
+import { credentials } from "src/credentials";
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: credentials.firebaseConfig,
 };
 
 /*

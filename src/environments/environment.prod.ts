@@ -1,3 +1,6 @@
+import { credentials } from 'src/credentials.prod';
+
 export const environment = {
-  production: true
+  production: true,
+  firebase: credentials.firebaseConfig,
 };
