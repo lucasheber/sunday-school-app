@@ -30,6 +30,14 @@
           ></ion-input>
         </fieldset>
       </ion-item>
+      <!-- error field -->
+      <div
+        *ngIf="formData.get('email')?.invalid && formData.get('email')?.touched"
+        class="error-text ion-item"
+      >
+        {{ 'login.emailError' | transloco }}
+      </div>
+
       <ion-item lines="none" class="ion-item">
         <fieldset class="input-item">
           <legend>{{ 'login.password' | transloco }}</legend>
@@ -40,6 +48,19 @@
           ></ion-input>
         </fieldset>
       </ion-item>
+      <!-- error field -->
+      <div
+        *ngIf="formData.get('password')?.invalid && formData.get('password')?.touched"
+        class="error-text ion-item"
+      >
+        {{ 'login.passwordError' | transloco }}
+      </div>
+
+      <!-- error field -->
+      <div *ngIf="invalidCredentials" class="error-text ion-item">
+        {{ 'login.loginError' | transloco }}
+      </div>
+
       <p class="forget-text">
         <a (click)="change('forget')"
           >{{ 'login.forgotPassword' | transloco }}?</a
