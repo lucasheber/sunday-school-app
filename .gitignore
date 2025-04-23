@@ -73,3 +73,5 @@ android/
 ios/
 resources/android/**/*
 src/assets/icons
+
+.env
