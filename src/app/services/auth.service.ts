@@ -1,19 +1,30 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { environment } from 'src/environments/environment';
+import { inject, Injectable } from '@angular/core';
+import { Auth, User, user, createUserWithEmailAndPassword, signInWithEmailAndPassword, UserCredential } from '@angular/fire/auth';
+import { from, map, Observable } from 'rxjs';
 
 @Injectable({
     providedIn: 'root'
 })
 export class AuthService {
+    private readonly auth = inject(Auth);
 
-    constructor(private http: HttpClient) { }
+    constructor() { }
 
-    userLogin() {
-        return true;
+    getUser(): Observable<User | null> {
+        return user(this.auth);
     }
 
-    userRegister() {
-        return true;
+    isLoggedIn$(): Observable<boolean> {
+        return this.getUser().pipe(
+            map((user) => !!user)
+        );
+    }
+
+    login(email: string, password: string): Observable<UserCredential> {
+        return from(signInWithEmailAndPassword(this.auth, email, password));
+    }
+
+    signup(email: string, password: string): Observable<UserCredential> {
+        return from(createUserWithEmailAndPassword(this.auth, email, password));
     }
 }
