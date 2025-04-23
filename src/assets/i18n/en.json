@@ -50,6 +50,10 @@
     "SELECT": {
         "okText": "OK",
         "cancelText": "Cancel"
+    },
+    "home": {
+        "title": "Home Page",
+        "welcome": "Welcome to the home page!",
+        "description": "This is the home page description."
     }
-
 }

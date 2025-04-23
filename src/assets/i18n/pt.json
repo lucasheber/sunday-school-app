@@ -51,5 +51,10 @@
     "SELECT": {
         "okText": "Confirmar",
         "cancelText": "Cancelar"
+    },
+    "home": {
+        "title": "Página Inicial",
+        "welcome": "Bem-vindo à página inicial!",
+        "description": "Esta é a descrição da página inicial."
     }
 }
