@@ -22,7 +22,11 @@ export const routes: Routes = [
       {
         path: 'classes',
         loadComponent: () => import('./pages/classes/classes.page').then(m => m.ClassesPage)
-      }
+      },
+      {
+        path: 'settings',
+        loadComponent: () => import('./pages/settings/settings.page').then(m => m.SettingsPage)
+      },
     ]
   },
 ];
