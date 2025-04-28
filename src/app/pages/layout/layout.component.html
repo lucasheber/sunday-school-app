@@ -25,6 +25,20 @@
               </ion-item>
             </ion-menu-toggle>
           }
+
+          <!-- Logout -->
+          <ion-menu-toggle auto-hide="false">
+            <ion-item (click)="logout()" lines="none" detail="false">
+              <ion-icon
+                color="danger"
+                aria-hidden="true"
+                slot="start"
+                [ios]="'log-out-outline'"
+                [md]="'log-out-sharp'"
+              ></ion-icon>
+              <ion-label>{{ "logout.title" | transloco }}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
         </ion-list>
       </ion-content>
     </ion-menu>
