@@ -1,60 +1,128 @@
 {
-    "login": {
-        "welcome": "Bem-vindo!",
-        "description": "Por favor, faça login para continuar.",
-        "title": "Entrar",
-        "email": "Email",
-        "password": "Senha",
-        "rememberMe": "Lembrar de mim",
-        "forgotPassword": "Esqueci minha senha",
-        "loginButton": "Entrar",
-        "register": "Registrar",
-        "emailError": "Por favor, insira um endereço de email válido.",
-        "passwordError": "A senha deve ter pelo menos 6 caracteres.",
-        "loginError": "Email ou senha inválidos."
-    },
-    "register": {
-        "title": "Registrar",
-        "description": "Registre-se para criar uma nova conta.",
-        "fullName": "Nome completo",
-        "username": "Nome de usuário",
-        "email": "Email",
-        "password": "Senha",
-        "confirmPassword": "Confirmar senha",
-        "registerButton": "Registrar",
-        "signin-a": "Já tem uma conta?",
-        "signin-b": "Entrar"
-    },
-    "forgotPassword": {
-        "title": "Esqueci minha senha",
-        "description": "Digite seu email para redefinir a senha.",
-        "remember": "Lembrar senha?",
-        "signin": "Entrar",
-        "email": "Email",
-        "sendButton": "Redefinir senha"
-    },
-    "resetPassword": {
-        "title": "Redefinir senha",
-        "newPassword": "Nova senha",
-        "confirmPassword": "Confirmar senha",
-        "resetButton": "Redefinir senha"
-    },
-   "copyRight": {
-        "craftedBy": "Feito com ❤️ por",
-        "author": "Lucas Heber"
-    },
-    "language": {
-        "title": "Idioma",
-        "english": "🇺🇸 Inglês",
-        "portuguese": "🇧🇷 Português"
-    },
-    "SELECT": {
-        "okText": "Confirmar",
-        "cancelText": "Cancelar"
-    },
-    "home": {
-        "title": "Página Inicial",
-        "welcome": "Bem-vindo à página inicial!",
-        "description": "Esta é a descrição da página inicial."
-    }
+  "app": {
+    "title": "Sistema de Gestão Escolar",
+    "description": "Um sistema completo para gerenciar sua escola.",
+    "welcome": "Bem-vindo,",
+    "logout": "Sair",
+    "login": "Entrar",
+    "register": "Registrar",
+    "forgotPassword": "Esqueci minha senha"
+  },
+  "login": {
+    "welcome": "Bem-vindo!",
+    "description": "Por favor, faça login para continuar.",
+    "title": "Entrar",
+    "email": "Email",
+    "password": "Senha",
+    "rememberMe": "Lembrar de mim",
+    "forgotPassword": "Esqueci minha senha",
+    "loginButton": "Entrar",
+    "register": "Registrar",
+    "emailError": "Por favor, insira um endereço de email válido.",
+    "passwordError": "A senha deve ter pelo menos 6 caracteres.",
+    "loginError": "Email ou senha inválidos."
+  },
+  "logout": {
+    "title": "Sair",
+    "description": "Você tem certeza de que deseja sair?",
+    "logoutButton": "Sair",
+    "cancelButton": "Cancelar"
+  },
+  "register": {
+    "title": "Registrar",
+    "description": "Registre-se para criar uma nova conta.",
+    "fullName": "Nome completo",
+    "username": "Nome de usuário",
+    "email": "Email",
+    "password": "Senha",
+    "confirmPassword": "Confirmar senha",
+    "registerButton": "Registrar",
+    "signin-a": "Já tem uma conta?",
+    "signin-b": "Entrar"
+  },
+  "forgotPassword": {
+    "title": "Esqueci minha senha",
+    "description": "Digite seu email para redefinir a senha.",
+    "remember": "Lembrar senha?",
+    "signin": "Entrar",
+    "email": "Email",
+    "sendButton": "Redefinir senha"
+  },
+  "resetPassword": {
+    "title": "Redefinir senha",
+    "newPassword": "Nova senha",
+    "confirmPassword": "Confirmar senha",
+    "resetButton": "Redefinir senha"
+  },
+  "copyRight": {
+    "craftedBy": "Feito com ❤️ por",
+    "author": "Lucas Heber"
+  },
+  "language": {
+    "title": "Idioma",
+    "english": "🇺🇸 Inglês",
+    "portuguese": "🇧🇷 Português"
+  },
+  "SELECT": {
+    "okText": "Confirmar",
+    "cancelText": "Cancelar"
+  },
+  "home": {
+    "title": "Página Inicial",
+    "welcome": "Bem-vindo à página inicial!",
+    "description": "Esta é a descrição da página inicial."
+  },
+  "classes": {
+    "title": "Classes",
+    "description": "Esta é a descrição das classes.",
+    "addClass": "Adicionar classe",
+    "className": "Nome da classe",
+    "classDescription": "Descrição da classe",
+    "classDuration": "Duração da classe",
+    "classLevel": "Nível da classe"
+  },
+  "students": {
+    "title": "Alunos",
+    "description": "Esta é a descrição dos alunos.",
+    "addStudent": "Adicionar aluno",
+    "studentName": "Nome do aluno",
+    "studentEmail": "Email do aluno",
+    "studentPhone": "Telefone do aluno",
+    "studentAddress": "Endereço do aluno"
+  },
+  "teachers": {
+    "title": "Professores",
+    "description": "Esta é a descrição dos professores.",
+    "addTeacher": "Adicionar professor",
+    "teacherName": "Nome do professor",
+    "teacherEmail": "Email do professor",
+    "teacherPhone": "Telefone do professor",
+    "teacherAddress": "Endereço do professor"
+  },
+  "profile": {
+    "title": "Perfil",
+    "description": "Esta é a descrição do perfil.",
+    "editProfile": "Editar perfil",
+    "changePassword": "Alterar senha",
+    "logout": "Sair"
+  },
+  "settings": {
+    "title": "Configurações",
+    "description": "Esta é a descrição das configurações.",
+    "language": "Idioma",
+    "notifications": "Notificações",
+    "privacy": "Privacidade",
+    "security": "Segurança"
+  },
+  "error": {
+    "notFound": "Página não encontrada",
+    "serverError": "Erro do servidor",
+    "unauthorized": "Não autorizado",
+    "forbidden": "Proibido"
+  },
+  "success": {
+    "operationSuccessful": "Operação realizada com sucesso",
+    "profileUpdated": "Perfil atualizado com sucesso",
+    "passwordChanged": "Senha alterada com sucesso"
+  }
 }

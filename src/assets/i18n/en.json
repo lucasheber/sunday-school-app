@@ -1,59 +1,115 @@
 {
-    "login": {
-        "welcome": "Welcome!",
-        "description": "Please log in to continue.",
-        "title": "Login",
-        "email": "Email",
-        "password": "Password",
-        "loginButton": "Login",
-        "forgotPassword": "Forgot Password",
-        "register": "Register",
-        "emailError": "Please enter a valid email address.",
-        "passwordError": "Password must be at least 6 characters long.",
-        "loginError": "Invalid email or password."
-    },
-    "register": {
-        "title": "Register",
-        "description": "Sign up to create a new account.",
-        "fullName": "Full Name",
-        "username": "Username",
-        "email": "Email",
-        "password": "Password",
-        "confirmPassword": "Confirm Password",
-        "registerButton": "Register",
-        "signin-a": "Already have an account?",
-        "signin-b": "Sign in"
-    },
-    "forgotPassword": {
-        "title": "Forgot Password",
-        "description": "Enter your email to reset password.",
-        "email": "Email",
-        "remember": "Remember password?",
-        "signin": "Sign in",
-        "sendButton": "Reset Password"
-    },
-    "resetPassword": {
-        "title": "Reset Password",
-        "newPassword": "New Password",
-        "confirmPassword": "Confirm Password",
-        "resetButton": "Reset Password"
-    },
-    "copyRight": {
-        "craftedBy": "Crafted in ❤️ by",
-        "author": "Lucas Heber"
-    },
-    "language": {
-        "title": "Language",
-        "english": "🇺🇸 English",
-        "portuguese": "🇧🇷 Portuguese"
-    },
-    "SELECT": {
-        "okText": "OK",
-        "cancelText": "Cancel"
-    },
-    "home": {
-        "title": "Home Page",
-        "welcome": "Welcome to the home page!",
-        "description": "This is the home page description."
-    }
+  "app": {
+    "title": "My Application",
+    "description": "This is a sample application.",
+    "welcome": "Welcome to our system!",
+    "logout": "Logout",
+    "login": "Login",
+    "register": "Register",
+    "forgotPassword": "Forgot Password"
+  },
+  "login": {
+    "welcome": "Welcome!",
+    "description": "Please log in to continue.",
+    "title": "Login",
+    "email": "Email",
+    "password": "Password",
+    "loginButton": "Login",
+    "forgotPassword": "Forgot Password",
+    "register": "Register",
+    "emailError": "Please enter a valid email address.",
+    "passwordError": "Password must be at least 6 characters long.",
+    "loginError": "Invalid email or password."
+  },
+  "logout": {
+    "title": "Logout",
+    "description": "Are you sure you want to log out?",
+    "logoutButton": "Logout",
+    "cancelButton": "Cancel"
+  },
+  "register": {
+    "title": "Register",
+    "description": "Sign up to create a new account.",
+    "fullName": "Full Name",
+    "username": "Username",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "registerButton": "Register",
+    "signin-a": "Already have an account?",
+    "signin-b": "Sign in"
+  },
+  "forgotPassword": {
+    "title": "Forgot Password",
+    "description": "Enter your email to reset password.",
+    "email": "Email",
+    "remember": "Remember password?",
+    "signin": "Sign in",
+    "sendButton": "Reset Password"
+  },
+  "resetPassword": {
+    "title": "Reset Password",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm Password",
+    "resetButton": "Reset Password"
+  },
+  "copyRight": {
+    "craftedBy": "Crafted in ❤️ by",
+    "author": "Lucas Heber"
+  },
+  "language": {
+    "title": "Language",
+    "english": "🇺🇸 English",
+    "portuguese": "🇧🇷 Portuguese"
+  },
+  "SELECT": {
+    "okText": "OK",
+    "cancelText": "Cancel"
+  },
+  "home": {
+    "title": "Home Page",
+    "welcome": "Welcome to the home page!",
+    "description": "This is the home page description."
+  },
+  "profile": {
+    "title": "Profile Page",
+    "welcome": "Welcome to your profile!",
+    "description": "This is your profile description.",
+    "editProfile": "Edit Profile",
+    "saveChanges": "Save Changes"
+  },
+  "settings": {
+    "title": "Settings Page",
+    "welcome": "Welcome to the settings!",
+    "description": "This is your settings description.",
+    "changePassword": "Change Password",
+    "updateEmail": "Update Email"
+  },
+  "classes": {
+    "title": "Classes",
+    "description": "This is the classes description.",
+    "addClass": "Add Class",
+    "className": "Class Name",
+    "classDescription": "Class Description",
+    "classDuration": "Class Duration",
+    "classLevel": "Class Level"
+  },
+  "students": {
+    "title": "Students",
+    "description": "This is the students description.",
+    "addStudent": "Add Student",
+    "studentName": "Student Name",
+    "studentEmail": "Student Email",
+    "studentPhone": "Student Phone",
+    "studentAddress": "Student Address"
+  },
+  "teachers": {
+    "title": "Teachers",
+    "description": "This is the teachers description.",
+    "addTeacher": "Add Teacher",
+    "teacherName": "Teacher Name",
+    "teacherEmail": "Teacher Email",
+    "teacherPhone": "Teacher Phone",
+    "teacherAddress": "Teacher Address"
+  }
 }
