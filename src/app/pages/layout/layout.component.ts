@@ -1,44 +1,22 @@
 import { Component, inject, OnInit } from '@angular/core';
-import {
-  IonHeader,
-  IonToolbar,
-  IonTitle, IonContent, IonMenu, IonList, IonItem, IonRouterOutlet, IonMenuToggle, IonIcon, IonLabel,
-  IonAvatar,
-  IonButton,
-  IonToggle,
-  IonItemDivider,
-} from '@ionic/angular/standalone';
-import { homeOutline, peopleOutline, schoolOutline } from 'ionicons/icons';
+import { IonApp, IonSplitPane, IonMenu, IonContent, IonList, IonListHeader, IonNote, IonMenuToggle, IonItem, IonIcon, IonLabel, IonRouterOutlet, IonRouterLink } from '@ionic/angular/standalone';
+
+import { addIcons } from 'ionicons';
+import { homeOutline, schoolOutline, settingsOutline, logOutOutline, homeSharp, schoolSharp, settingsSharp, logOutSharp } from 'ionicons/icons';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 import { User } from 'firebase/auth';
 import { AuthService } from 'src/app/services/auth.service';
-import { addIcons } from 'ionicons';
 import { FormsModule } from '@angular/forms';
 import { Preferences } from '@capacitor/preferences';
 import { Router } from '@angular/router';
+import { TranslocoModule } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-layout',
   templateUrl: './layout.component.html',
   styleUrls: ['./layout.component.scss'],
-  imports: [
-    FormsModule,
-    IonMenu,
-    IonHeader,
-    IonToolbar,
-    IonTitle,
-    IonContent,
-    IonList,
-    IonItem,
-    IonRouterOutlet,
-    IonMenuToggle,
-    IonIcon,
-    IonLabel,
-    IonAvatar,
-    IonButton,
-    IonToggle,
-    IonItemDivider
-  ],
+  imports: [RouterLink, RouterLinkActive, IonApp, IonSplitPane, IonMenu, IonContent, IonList, IonListHeader, IonNote, IonMenuToggle, IonItem, IonIcon, IonLabel, IonRouterLink, IonRouterOutlet, TranslocoModule],
 })
 export class LayoutComponent implements OnInit {
 
@@ -48,9 +26,17 @@ export class LayoutComponent implements OnInit {
   user: User | null = null;
   isDarkMode: boolean = true;
 
-  constructor() {
+  public appPages = [
+    { title: 'home.title', url: '/home', icon: 'home' },
+    { title: 'classes.title', url: '/classes', icon: 'school' },
+    { title: 'settings.title', url: '/settings', icon: 'settings' },
+    { title: 'logout.title', url: '/logout', icon: 'log-out' },
+  ];
 
-    addIcons({ homeOutline, peopleOutline, schoolOutline });
+  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+
+  constructor() {
+    addIcons({ homeOutline, homeSharp, schoolOutline, schoolSharp, settingsOutline, settingsSharp, logOutOutline, logOutSharp });
   }
 
   async ngOnInit() {
@@ -88,6 +74,10 @@ export class LayoutComponent implements OnInit {
   // Add or remove the "ion-palette-dark" class on the html element
   toggleDarkPalette(shouldAdd: boolean) {
     document.documentElement.classList.toggle('ion-palette-dark', shouldAdd);
+  }
+
+  navigate(path: string) {
+    this.router.navigate([path], { replaceUrl: true });
   }
 
   logout() {
