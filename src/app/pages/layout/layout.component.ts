@@ -2,7 +2,7 @@ import { Component, inject, OnInit } from '@angular/core';
 import { IonApp, IonSplitPane, IonMenu, IonContent, IonList, IonListHeader, IonNote, IonMenuToggle, IonItem, IonIcon, IonLabel, IonRouterOutlet, IonRouterLink } from '@ionic/angular/standalone';
 
 import { addIcons } from 'ionicons';
-import { homeOutline, schoolOutline, settingsOutline, logOutOutline, homeSharp, schoolSharp, settingsSharp, logOutSharp } from 'ionicons/icons';
+import { homeOutline, schoolOutline, settingsOutline, logOutOutline, homeSharp, schoolSharp, settingsSharp, logOutSharp, calendarSharp, calendarOutline } from 'ionicons/icons';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 import { User } from 'firebase/auth';
@@ -27,13 +27,14 @@ export class LayoutComponent implements OnInit {
   public appPages = [
     { title: 'home.title', url: '/home', icon: 'home' },
     { title: 'classes.title', url: '/classes', icon: 'school' },
+    // { title: 'calendar.title', url: '/calendar', icon: 'calendar' },
     { title: 'settings.title', url: '/settings', icon: 'settings' },
   ];
 
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 
   constructor() {
-    addIcons({ homeOutline, homeSharp, schoolOutline, schoolSharp, settingsOutline, settingsSharp, logOutOutline, logOutSharp });
+    addIcons({ homeOutline, homeSharp, schoolOutline, schoolSharp, settingsOutline, settingsSharp, logOutOutline, logOutSharp, calendarOutline, calendarSharp });
   }
 
   async ngOnInit() {
