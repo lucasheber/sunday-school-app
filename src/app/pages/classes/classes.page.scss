@@ -1,0 +1,31 @@
+.class-card {
+  width: 100%;
+}
+
+.classes-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+.class-item {
+  flex: 1 1 calc(100% - 32px); // Default: full width
+  max-width: 600px;
+  margin: 16px;
+}
+
+@media (min-width: 600px) {
+  .class-item {
+    flex: 1 1 calc(48% - 32px); // Two cards per row
+    margin: 2px 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .class-item {
+    flex: 1 1 calc(50% - 32px); // Four cards per row
+    margin: 8px;
+  }
+}
