@@ -23,9 +23,24 @@
         </ion-toggle>
       </ion-item>
 
-      <ion-item button (click)="openThemeModal()">
-        <ion-label>{{ 'settings.theme' | transloco }}</ion-label>
-        <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+      <ion-item>
+        <ion-icon
+          slot="start"
+          icon="language-outline"
+          class="component-icon component-icon-dark"
+        ></ion-icon>
+        <ion-select
+          interface="popover"
+          [(ngModel)]="selectedLanguage"
+          (ionChange)="changeLanguage($event)"
+        >
+          <ion-select-option value="en">
+            {{ 'language.english' | transloco }}
+          </ion-select-option>
+          <ion-select-option value="pt">
+            {{ 'language.portuguese' | transloco }}
+          </ion-select-option>
+        </ion-select>
       </ion-item>
     </ion-list>
   </div>
