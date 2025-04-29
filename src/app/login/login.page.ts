@@ -6,6 +6,7 @@ import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
 import { AuthService } from '../services/auth.service';
 import { Router } from '@angular/router';
 import { tap } from 'rxjs';
+import { ThemeService } from '../services/theme.service';
 
 @Component({
   selector: 'app-login',
@@ -23,6 +24,7 @@ export class LoginPage implements OnInit {
 
   private readonly router = inject(Router);
   private readonly authenticationService = inject(AuthService);
+  private readonly themeService = inject(ThemeService);
 
   constructor(private fb: FormBuilder, private translocoService: TranslocoService) {
     this.formData = this.fb.group({
@@ -41,6 +43,7 @@ export class LoginPage implements OnInit {
       })
     ).subscribe();
 
+    this.themeService.initialize();
   }
 
   change(event: any) {
