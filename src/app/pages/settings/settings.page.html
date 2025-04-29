@@ -15,7 +15,10 @@
           icon="moon-outline"
           class="component-icon component-icon-dark"
         ></ion-icon>
-        <ion-toggle (ionChange)="toggleDarkMode($event)">
+        <ion-toggle
+          [(ngModel)]="isDarkMode"
+          (ionChange)="toggleDarkMode($event)"
+        >
           Dark Mode
         </ion-toggle>
       </ion-item>
