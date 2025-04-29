@@ -5,7 +5,7 @@ import { IonContent, IonHeader, IonTitle, IonToolbar, IonMenuButton, IonButtons,
 import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
 import { Preferences } from '@capacitor/preferences';
 import { addIcons } from 'ionicons';
-import { languageOutline, moonOutline, moonSharp } from 'ionicons/icons';
+import { languageOutline, moonOutline } from 'ionicons/icons';
 import { ThemeService } from 'src/app/services/theme.service';
 
 @Component({

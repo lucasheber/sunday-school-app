@@ -6,7 +6,8 @@
     "logout": "Logout",
     "login": "Login",
     "register": "Register",
-    "forgotPassword": "Forgot Password"
+    "forgotPassword": "Forgot Password",
+    "darkMode": "Dark Mode"
   },
   "login": {
     "welcome": "Welcome!",

@@ -6,7 +6,8 @@
     "logout": "Sair",
     "login": "Entrar",
     "register": "Registrar",
-    "forgotPassword": "Esqueci minha senha"
+    "forgotPassword": "Esqueci minha senha",
+    "darkMode": "Modo escuro"
   },
   "login": {
     "welcome": "Bem-vindo!",

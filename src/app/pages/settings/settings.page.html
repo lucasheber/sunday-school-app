@@ -8,8 +8,8 @@
 </ion-header>
 <ion-content id="main-content">
   <div class="container">
-    <ion-list>
-      <ion-item>
+    <ion-list class="ion-padding">
+      <ion-item class="container-item">
         <ion-icon
           slot="start"
           icon="moon-outline"
@@ -19,11 +19,11 @@
           [(ngModel)]="isDarkMode"
           (ionChange)="toggleDarkMode($event)"
         >
-          Dark Mode
+          {{ 'app.darkMode' | transloco }}
         </ion-toggle>
       </ion-item>
 
-      <ion-item>
+      <ion-item class="container-item">
         <ion-icon
           slot="start"
           icon="language-outline"
@@ -31,8 +31,10 @@
         ></ion-icon>
         <ion-select
           interface="popover"
+          justify="space-between"
           [(ngModel)]="selectedLanguage"
           (ionChange)="changeLanguage($event)"
+          label="{{ 'language.title' | transloco }}"
         >
           <ion-select-option value="en">
             {{ 'language.english' | transloco }}
