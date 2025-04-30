@@ -1,5 +1,37 @@
+.classes-list {
+  padding: 16px;
+}
+
+.class-item {
+  margin-bottom: 16px;
+}
+
 .class-card {
-  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out;
+  background-color: var(--ion-card-background, #f9f9f9);
+  color: var(--ion-text-color);
+  border: 1px solid black; // padrão
+}
+
+.class-card:hover {
+  transform: scale(1.01);
+}
+
+ion-card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--ion-text-color);
+}
+
+ion-button {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+ion-button:hover {
+  filter: brightness(0.95);
 }
 
 .classes-list {
@@ -13,7 +45,6 @@
 .class-item {
   flex: 1 1 calc(100% - 32px); // Default: full width
   max-width: 600px;
-  margin: 16px;
 }
 
 @media (min-width: 600px) {
@@ -26,6 +57,14 @@
 @media (min-width: 900px) {
   .class-item {
     flex: 1 1 calc(50% - 32px); // Four cards per row
-    margin: 8px;
+    margin: 8px 0;
+  }
+}
+
+// 👇 Só aplica no dark mode
+@media (prefers-color-scheme: dark) {
+  .class-card {
+    border: 1px solid rgba(255, 255, 255, 0.4); // uma borda clara discreta
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
   }
 }

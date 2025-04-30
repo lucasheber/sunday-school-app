@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
@@ -7,15 +7,46 @@
   </ion-toolbar>
 </ion-header>
 <ion-content id="main-content">
-  <ion-list class="classes-list">
-    <ion-item *ngFor="let class of classes" class="class-item">
+  <ion-list *ngIf="classes$ | async as classes" class="classes-list">
+    <ion-item *ngFor="let class of classes" class="class-item" lines="none">
       <ion-card class="class-card">
         <ion-card-header>
           <ion-card-title>{{ class.name}}</ion-card-title>
-          <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle> -->
         </ion-card-header>
 
-        <ion-card-content> {{ class.description }} </ion-card-content>
+        <ion-card-content>
+          <ion-chip slot="end" color="{{ class.color }}">
+            {{ class.category }}
+          </ion-chip>
+        </ion-card-content>
+        <ion-grid>
+          <ion-row class="ion-justify-content-between">
+            <ion-col size="6">
+              <ion-button
+                color="primary"
+                expand="block"
+                size="medium"
+                shape="round"
+                fill="clear"
+              >
+                <ion-icon slot="start" name="person-outline"></ion-icon>
+                {{ 'teachers.title' | transloco }}
+              </ion-button>
+            </ion-col>
+            <ion-col size="6">
+              <ion-button
+                color="secondary"
+                expand="block"
+                size="medium"
+                shape="round"
+                fill="clear"
+              >
+                <ion-icon slot="start" name="people-outline"></ion-icon>
+                {{ 'students.title' | transloco }}
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
       </ion-card>
     </ion-item>
   </ion-list>
