@@ -29,4 +29,8 @@ export const routes: Routes = [
       },
     ]
   },
+  {
+    path: 'teachers',
+    loadComponent: () => import('./pages/teachers/teachers.page').then( m => m.TeachersPage)
+  },
 ];
