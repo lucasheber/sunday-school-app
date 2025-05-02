@@ -2,12 +2,11 @@ import { Component, inject, OnInit } from '@angular/core';
 import { IonApp, IonSplitPane, IonMenu, IonContent, IonList, IonListHeader, IonNote, IonMenuToggle, IonItem, IonIcon, IonLabel, IonRouterOutlet, IonRouterLink } from '@ionic/angular/standalone';
 
 import { addIcons } from 'ionicons';
-import { homeOutline, schoolOutline, settingsOutline, logOutOutline, homeSharp, schoolSharp, settingsSharp, logOutSharp, calendarSharp, calendarOutline } from 'ionicons/icons';
+import { homeOutline, schoolOutline, settingsOutline, logOutOutline, homeSharp, schoolSharp, settingsSharp, logOutSharp, calendarSharp, calendarOutline, peopleOutline, peopleSharp } from 'ionicons/icons';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 import { User } from 'firebase/auth';
 import { AuthService } from 'src/app/services/auth.service';
-import { Preferences } from '@capacitor/preferences';
 import { Router } from '@angular/router';
 import { TranslocoModule } from '@jsverse/transloco';
 
@@ -27,6 +26,7 @@ export class LayoutComponent implements OnInit {
   public appPages = [
     { title: 'home.title', url: '/home', icon: 'home' },
     { title: 'classes.title', url: '/classes', icon: 'school' },
+    { title: 'teachers.title', url: '/teachers', icon: 'people' },
     // { title: 'calendar.title', url: '/calendar', icon: 'calendar' },
     { title: 'settings.title', url: '/settings', icon: 'settings' },
   ];
@@ -34,7 +34,7 @@ export class LayoutComponent implements OnInit {
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 
   constructor() {
-    addIcons({ homeOutline, homeSharp, schoolOutline, schoolSharp, settingsOutline, settingsSharp, logOutOutline, logOutSharp, calendarOutline, calendarSharp });
+    addIcons({ homeOutline, homeSharp, schoolOutline, schoolSharp, settingsOutline, settingsSharp, logOutOutline, logOutSharp, calendarOutline, calendarSharp, peopleOutline, peopleSharp });
   }
 
   async ngOnInit() {
