@@ -19,9 +19,9 @@ export class AppComponent {
   async setStatusBar() {
     if (isPlatform('android')) {
       await StatusBar.setBackgroundColor({ color: '#ffffff' }); // cor do header
-      await StatusBar.setOverlaysWebView({ overlay: true });
+      await StatusBar.setOverlaysWebView({ overlay: false });
       await StatusBar.setStyle({ style: Style.Dark });
-      await StatusBar.show();
+      await StatusBar.hide();
     }
   }
 }
