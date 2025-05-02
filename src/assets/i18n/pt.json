@@ -7,7 +7,15 @@
     "login": "Entrar",
     "register": "Registrar",
     "forgotPassword": "Esqueci minha senha",
-    "darkMode": "Modo escuro"
+    "darkMode": "Modo escuro",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "search": "Pesquisar",
+    "add": "Adicionar",
+    "update": "Atualizar",
+    "view": "Ver"
   },
   "login": {
     "welcome": "Bem-vindo!",
@@ -98,7 +106,8 @@
     "teacherName": "Nome do professor",
     "teacherEmail": "Email do professor",
     "teacherPhone": "Telefone do professor",
-    "teacherAddress": "Endereço do professor"
+    "teacherAddress": "Endereço do professor",
+    "search": "Pesquisar professor"
   },
   "profile": {
     "title": "Perfil",

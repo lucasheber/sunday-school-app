@@ -7,7 +7,15 @@
     "login": "Login",
     "register": "Register",
     "forgotPassword": "Forgot Password",
-    "darkMode": "Dark Mode"
+    "darkMode": "Dark Mode",
+    "delete": "Delete",
+    "edit": "Edit",
+    "save": "Save",
+    "cancel": "Cancel",
+    "search": "Search",
+    "add": "Add",
+    "update": "Update",
+    "view": "View"
   },
   "login": {
     "welcome": "Welcome!",
@@ -111,6 +119,7 @@
     "teacherName": "Teacher Name",
     "teacherEmail": "Teacher Email",
     "teacherPhone": "Teacher Phone",
-    "teacherAddress": "Teacher Address"
+    "teacherAddress": "Teacher Address",
+    "search": "Search Teacher"
   }
 }
