@@ -18,6 +18,9 @@
           <ion-chip slot="end" color="{{ class.color }}">
             {{ class.category }}
           </ion-chip>
+          <ion-chip slot="end" color="{{ class.color }}">
+            {{ class.teachers.length }} {{ 'teachers.title' | transloco }}
+          </ion-chip>
         </ion-card-content>
         <ion-grid>
           <ion-row class="ion-justify-content-between">
@@ -28,6 +31,7 @@
                 size="medium"
                 shape="round"
                 fill="clear"
+                (click)="viewTeachers(class)"
               >
                 <ion-icon slot="start" name="person-outline"></ion-icon>
                 {{ 'teachers.title' | transloco }}
