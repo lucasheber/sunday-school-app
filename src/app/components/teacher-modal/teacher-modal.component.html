@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ classe.name }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="confirm()" [strong]="true">
+        {{ "app.confirm" | transloco }}
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <!-- div with scroll -->
+  <ion-list>
+    <div>
+      <ion-item
+        *ngFor="let schedule of schedules"
+        lines="none"
+        color="{{ getColor(schedule.date) }}"
+      >
+        <ion-icon slot="start" name="calendar-outline"></ion-icon>
+        <ion-label>{{ schedule.date | date: "dd/MM/yy" }}</ion-label>
+        <ion-label>
+          {{ getTeacherName(schedule.teacherId, true) }}
+        </ion-label>
+      </ion-item>
+    </div>
+  </ion-list>
+</ion-content>

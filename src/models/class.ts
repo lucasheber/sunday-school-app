@@ -3,4 +3,5 @@ export interface Class {
     name: string;
     category: string;
     color: string;
+    teachers: string[];
 }
