@@ -8,6 +8,39 @@
 </ion-header>
 <ion-content id="main-content">
   <div class="container">
-    <h1>Home</h1>
+    <ion-select
+    interface="popover"
+    justify="space-between"
+    class="ion-padding"
+    (ionChange)="filter($event)"
+    label="{{ 'app.filterBy' | transloco }}"
+    value="notLearned"
+  >
+    <ion-select-option value="all">
+      {{ 'app.all' | transloco }}
+    </ion-select-option>
+    <ion-select-option value="notLearned">
+      {{ 'app.notLearned' | transloco }}
+    </ion-select-option>
+    <ion-select-option value="learned">
+      {{ 'app.learned' | transloco }}
+    </ion-select-option>
+  </ion-select>
+
+    <ion-list>
+      <ion-card *ngFor="let schedule of results">
+        <ion-card-header>
+          <ion-icon aria-hidden="true" slot="start" name="book-outline"></ion-icon>
+          <ion-card-title>{{ schedule.description }}</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <ion-chip color="secondary">{{ getTeacherName(schedule.teacherId) }}</ion-chip>
+          <ion-chip color="success">{{schedule.date | date:'dd/MM/yy' }}</ion-chip>
+        </ion-card-content>
+
+        <ion-button fill="clear" color="primary">Abrir aula</ion-button>
+      </ion-card>
+    </ion-list>
   </div>
 </ion-content>

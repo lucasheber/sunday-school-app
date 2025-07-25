@@ -16,7 +16,13 @@
     "search": "Pesquisar",
     "add": "Adicionar",
     "update": "Atualizar",
-    "view": "Ver"
+    "view": "Ver",
+    "all": "Todos",
+    "active": "Ativo",
+    "inactive": "Inativo",
+    "notLearned": "Não aprendido",
+    "learned": "Aprendido",
+    "filterBy": "Filtrar por"
   },
   "login": {
     "welcome": "Bem-vindo!",
